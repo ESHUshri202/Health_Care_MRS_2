@@ -1,0 +1,67 @@
+@import "tailwindcss";
+:root {
+    --primary: #0DD3B9;
+    --secondary: #0ea5e9;
+    --dark: #0f172a;
+  }
+  body {
+    font-family: 'Poppins', sans-serif;
+    @apply bg-gray-50 text-[#1e293b];
+  }
+
+
+.gradient-text {
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+  
+  .gradient-bg {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+  }
+  
+  .card {
+    @apply bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300;
+  }
+  
+  .btn {
+    @apply px-6 py-2 rounded-full font-medium transition-all duration-300 transform hover:scale-105;
+  }
+  
+  .btn-primary {
+    @apply bg-[#0DD3B9] text-white hover:bg-[#00a38f];
+  }
+  
+  .btn-secondary {
+    @apply bg-[#0ea5e9] text-white hover:bg-[#0284c7];
+  }
+  
+  .btn-outline {
+    @apply border-2 border-[#0DD3B9] text-[#0DD3B9] hover:bg-[#0DD3B9] hover:text-white;
+  }
+  
+  .container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .section {
+    @apply py-16 md:py-24;
+  }
+  
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold mb-8 text-center;
+  }
+  
+  .section-subtitle {
+    @apply text-xl text-[#64748b] mb-12 text-center max-w-3xl mx-auto;
+  }
+  
+  .search-input {
+    @apply w-full px-6 py-4 text-lg rounded-full border-2 border-gray-200 focus:border-[#0DD3B9] focus:outline-none shadow-sm;
+  }
+  
+  .result-card {
+    @apply bg-white rounded-xl shadow-md p-6 transition-all duration-300 border-l-4 hover:shadow-lg;
+  }
